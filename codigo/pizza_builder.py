@@ -2,9 +2,10 @@
 from codigo.builder_interface import PizzaBuilderInterface
 from codigo.pizza import Pizza
 
+# Esta clase es la que va a construir una pizza, con datos que le pasen los directores
+
 
 class PizzaBuilder(PizzaBuilderInterface):
-    "El constructor de las pizzas"
 
     def __init__(self):
         self.pizza = Pizza()
@@ -22,7 +23,7 @@ class PizzaBuilder(PizzaBuilderInterface):
         return self
 
     def set_topping(self, topping):
-        self.pizza.topping=topping
+        self.pizza.topping = topping
         return self
 
     def get_result(self):
